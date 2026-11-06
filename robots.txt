@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://application-risk-investigation.vercel.app/sitemap.xml
