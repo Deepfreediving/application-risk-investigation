@@ -93,8 +93,7 @@
     <p><strong>Step 1 — tell me what needs looking at.</strong> One email with the situation is enough
     to confirm scope and turnaround. No obligation, nothing charged.</p>
     <p>
-      <a class="btn" id="request-link" href="#">Email the request</a>
-      <a class="btn secondary" id="pay-link" href="#payment">Pay $499</a>
+      <a class="btn" id="request-link" href="mailto:daniel@deepfreediving.com?subject=Application%20risk%20investigation%20request&amp;body=Hi%2C%0A%0AI%20would%20like%20the%2048-Hour%20Application%20Risk%20Investigation%20(%24499).%0A%0AProduct%20%2F%20company%3A%0AWhat%20was%20built%20and%20by%20whom%3A%0AWhat%20I%20am%20worried%20about%3A%0AWhat%20the%20report%20needs%20to%20help%20me%20decide%3A%0AHow%20the%20code%20can%20be%20accessed%3A%0A%0AThanks">Email the request</a>
     </p>
     <p class="note" id="payment">Payment is taken by invoice once scope is confirmed, so you are not
     paying for an investigation that does not fit your situation.</p>
@@ -106,25 +105,5 @@
   </footer>
 </div>
 
-<script>
-  // Request path works with no backend: opens the visitor's mail client with the
-  // scope questions already filled in.
-  const EMAIL = 'daniel@deepfreediving.com';
-  const subject = encodeURIComponent('Application risk investigation request');
-  const body = encodeURIComponent(
-`Hi,
-
-I would like the 48-Hour Application Risk Investigation ($499).
-
-Product / company:
-What was built and by whom:
-What I am worried about:
-What I need the report to help me decide:
-How the code can be accessed (private repo invite / zip):
-
-Thanks`
-  );
-  document.getElementById('request-link').href = 'mailto:' + EMAIL + '?subject=' + subject + '&body=' + body;
-</script>
 </body>
 </html>
